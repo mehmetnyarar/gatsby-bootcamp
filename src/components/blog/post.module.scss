@@ -1,0 +1,45 @@
+$post-deep: hsl(300, 75%, 10%);
+$post-dark: hsl(300, 75%, 25%);
+$post-main: hsl(300, 75%, 50%);
+$post-lite: hsl(300, 75%, 75%);
+$post-soft: hsl(300, 75%, 90%);
+$post-pale: hsl(300, 25%, 50%);
+$post-mute: hsl(300, 25%, 75%);
+
+.post {
+  padding: 16px;
+  border-radius: 4px;
+  background: $post-soft;
+  transition: all 0.4s;
+
+  &:hover {
+    background: $post-lite;
+    span {
+      color: $post-pale;
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+  sup {
+    top: -2.5em;
+    font-size: 8px;
+    font-style: italic;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $post-dark;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span {
+    color: $post-mute;
+    font-size: 0.8rem;
+    transition: all 0.4s;
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  padding: 1rem 0 0rem;
+}
+
+.title {
+  color: #000000;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  color: #999999;
+  font-size: 1rem;
+  margin-right: 16px;
+  text-decoration: none;
+
+  &:hover {
+    color: palevioletred;
+  }
+}
+.active {
+  color: blue;
+}
